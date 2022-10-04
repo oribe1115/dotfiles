@@ -1,0 +1,11 @@
+/*
+/.*
+
+!/README.md
+!/.gitignore
+
+!/.profile
+!/.bashrc
+!/.bash_aliases
+!/.gitconfig
+!/.tool-versions
