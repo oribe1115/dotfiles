@@ -27,3 +27,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 PATH=$PATH:/$HOME/.local/go/bin
+
+GOPATH=$HOME/go
+GOBIN=$GOPATH/bin
+PATH=$PATH:/$GOBIN
