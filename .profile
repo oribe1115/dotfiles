@@ -31,3 +31,5 @@ PATH=$PATH:/$HOME/.local/go/bin
 GOPATH=$HOME/go
 GOBIN=$GOPATH/bin
 PATH=$PATH:/$GOBIN
+
+PATH=$HOME/.progate/bin:$PATH
