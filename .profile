@@ -33,3 +33,6 @@ GOBIN=$GOPATH/bin
 PATH=$PATH:/$GOBIN
 
 PATH=$HOME/.progate/bin:$PATH
+
+JAVA_HOME=$HOME/.jdks/temurin-18.0.2.1/
+PATH=$HOME/.jdks/temurin-18.0.2.1/bin:$PATH
