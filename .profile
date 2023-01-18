@@ -26,11 +26,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-PATH=$PATH:/$HOME/.local/go/bin
+PATH=$PATH:$HOME/.local/go/bin
 
 GOPATH=$HOME/go
 GOBIN=$GOPATH/bin
-PATH=$PATH:/$GOBIN
+PATH=$PATH:$GOBIN
 
 PATH=$HOME/.progate/bin:$PATH
 
