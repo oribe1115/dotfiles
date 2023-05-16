@@ -36,3 +36,5 @@ PATH=$HOME/.progate/bin:$PATH
 
 JAVA_HOME=$HOME/.jdks/temurin-18.0.2.1/
 PATH=$HOME/.jdks/temurin-18.0.2.1/bin:$PATH
+
+PATH=$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH
