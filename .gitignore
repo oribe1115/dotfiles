@@ -13,3 +13,4 @@
 !/.config
 /.config/*
 !/.config/starship.toml
+!/.config/git/ignore
