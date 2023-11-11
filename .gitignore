@@ -14,3 +14,4 @@
 /.config/*
 !/.config/starship.toml
 !/.config/git/ignore
+!/.config/zellij
