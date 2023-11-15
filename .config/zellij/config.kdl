@@ -321,7 +321,6 @@ default_layout "custom-simple"
 // The folder in which Zellij will look for layouts
 //
 // layout_dir "/path/to/my/layout_dir"
-layout_dir "./layout"
 
 // The folder in which Zellij will look for themes
 //
