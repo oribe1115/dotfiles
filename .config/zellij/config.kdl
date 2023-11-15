@@ -8,7 +8,11 @@ keybinds {
         bind "Ctrl g" { SwitchToMode "Normal"; }
     }
     resize {
+        //bind "Ctrl n" { SwitchToMode "Normal"; }
+
+        unbind "Ctrl n"
         bind "Ctrl n" { SwitchToMode "Normal"; }
+
         bind "h" "Left" { Resize "Increase Left"; }
         bind "j" "Down" { Resize "Increase Down"; }
         bind "k" "Up" { Resize "Increase Up"; }
@@ -110,7 +114,10 @@ keybinds {
         bind "Esc" { UndoRenamePane; SwitchToMode "Pane"; }
     }
     session {
-        bind "Ctrl o" { SwitchToMode "Normal"; }
+        //bind "Ctrl o" { SwitchToMode "Normal"; }
+        unbind "Ctrl o"
+        bind "Ctrl e" { SwitchToMode "Normal"; }
+
         bind "Ctrl s" { SwitchToMode "Scroll"; }
         bind "d" { Detach; }
         bind "w" {
@@ -164,13 +171,19 @@ keybinds {
         bind "Ctrl p" { SwitchToMode "Pane"; }
     }
     shared_except "resize" "locked" {
-        bind "Ctrl n" { SwitchToMode "Resize"; }
+        // bind "Ctrl n" { SwitchToMode "Resize"; }
+
+        unbind "Ctrl n"
+        bind "Ctrl r" { SwitchToMode "Resize"; }
     }
     shared_except "scroll" "locked" {
         bind "Ctrl s" { SwitchToMode "Scroll"; }
     }
     shared_except "session" "locked" {
-        bind "Ctrl o" { SwitchToMode "Session"; }
+        //bind "Ctrl o" { SwitchToMode "Session"; }
+
+        unbind "Ctrl o"
+        bind "Ctrl e" { SwitchToMode "Session"; }
     }
     shared_except "tab" "locked" {
         bind "Ctrl t" { SwitchToMode "Tab"; }
