@@ -5,6 +5,9 @@ local plugins = {
       ensure_installed = {
         "rust-analyzer",
         "gopls",
+        "typescript-language-server",
+        "prettier",
+        "eslint-lsp",
       },
     },
   },

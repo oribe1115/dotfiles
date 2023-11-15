@@ -24,3 +24,10 @@ lspconfig.gopls.setup({
   filetypes = {"go"},
   root_dir = util.root_pattern("go.mod"),
 })
+
+lspconfig.tsserver.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"typescript"},
+  root_dir = util.root_pattern("package.json"),
+})
