@@ -4,7 +4,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "rust-analyzer",
-        "gopls"
+        "gopls",
       },
     },
   },
@@ -34,6 +34,13 @@ local plugins = {
     },
     config = function ()
       require("telescope").load_extension("live_grep_args")
+    end
+  },
+  {
+    "fatih/vim-go",
+    ft = "go",
+    init = function ()
+      vim.g.go_fmt_autosave = 1
     end
   }
 }
