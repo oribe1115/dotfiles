@@ -42,7 +42,9 @@ keybinds {
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
     }
     move {
-        bind "Ctrl h" { SwitchToMode "Normal"; }
+        //bind "Ctrl h" { SwitchToMode "Normal"; }
+        unbind "Ctrl h"
+        bind "Ctrl m" { SwitchToMode "Normal"; }
         bind "n" "Tab" { MovePane; }
         bind "p" { MovePaneBackwards; }
         bind "h" "Left" { MovePane "Left"; }
@@ -116,7 +118,7 @@ keybinds {
     session {
         //bind "Ctrl o" { SwitchToMode "Normal"; }
         unbind "Ctrl o"
-        bind "Ctrl e" { SwitchToMode "Normal"; }
+        bind "Ctrl l" { SwitchToMode "Normal"; }
 
         bind "Ctrl s" { SwitchToMode "Scroll"; }
         bind "d" { Detach; }
@@ -183,13 +185,15 @@ keybinds {
         //bind "Ctrl o" { SwitchToMode "Session"; }
 
         unbind "Ctrl o"
-        bind "Ctrl e" { SwitchToMode "Session"; }
+        bind "Ctrl l" { SwitchToMode "Session"; }
     }
     shared_except "tab" "locked" {
         bind "Ctrl t" { SwitchToMode "Tab"; }
     }
     shared_except "move" "locked" {
-        bind "Ctrl h" { SwitchToMode "Move"; }
+        //bind "Ctrl h" { SwitchToMode "Move"; }
+        unbind "Ctrl h"
+        bind "Ctrl m" { SwitchToMode "Move"; }
     }
     shared_except "tmux" "locked" {
         bind "Ctrl b" { SwitchToMode "Tmux"; }
