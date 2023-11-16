@@ -118,7 +118,7 @@ keybinds {
     session {
         //bind "Ctrl o" { SwitchToMode "Normal"; }
         unbind "Ctrl o"
-        bind "Ctrl l" { SwitchToMode "Normal"; }
+        bind "Ctrl y" { SwitchToMode "Normal"; }
 
         bind "Ctrl s" { SwitchToMode "Scroll"; }
         bind "d" { Detach; }
@@ -185,7 +185,7 @@ keybinds {
         //bind "Ctrl o" { SwitchToMode "Session"; }
 
         unbind "Ctrl o"
-        bind "Ctrl l" { SwitchToMode "Session"; }
+        bind "Ctrl y" { SwitchToMode "Session"; }
     }
     shared_except "tab" "locked" {
         bind "Ctrl t" { SwitchToMode "Tab"; }
