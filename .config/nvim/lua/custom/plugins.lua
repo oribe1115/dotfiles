@@ -59,6 +59,13 @@ local plugins = {
     opts = function ()
       return require "custom.configs.formatter"
     end
+  },
+  {
+    "akinsho/toggleterm.nvim",
+    event = "VeryLazy",
+    opts = function ()
+      require "custom.configs.toggleterm"
+    end
   }
 }
 
