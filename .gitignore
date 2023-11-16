@@ -10,6 +10,8 @@
 !/.gitconfig
 !/.tool-versions
 
+!/bin/sync.sh
+
 !/.config
 /.config/*
 !/.config/starship.toml
