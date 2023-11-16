@@ -57,7 +57,7 @@ local plugins = {
     "mhartington/formatter.nvim",
     event = "VeryLazy",
     opts = function ()
-      require("custom.configs.formatter")
+      return require "custom.configs.formatter"
     end
   }
 }
