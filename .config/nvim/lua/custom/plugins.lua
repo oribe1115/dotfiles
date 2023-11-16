@@ -36,7 +36,7 @@ local plugins = {
       },
     },
     config = function ()
-      require("telescope").load_extension("live_grep_args")
+      require "custom.configs.telescope"
     end
   },
   {
