@@ -45,6 +45,20 @@ local plugins = {
     init = function ()
       vim.g.go_fmt_autosave = 1
     end
+  },
+  {
+    "mfussenegger/nvim-lint",
+    event = "VeryLazy",
+    config = function ()
+      require "custom.configs.lint"
+    end
+  },
+  {
+    "mhartington/formatter.nvim",
+    event = "VeryLazy",
+    opts = function ()
+      require("custom.configs.formatter")
+    end
   }
 }
 
