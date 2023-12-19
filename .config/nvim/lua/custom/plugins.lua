@@ -76,7 +76,28 @@ local plugins = {
             -- Configuration here, or leave empty to use defaults
         })
     end
-  }
+  },
+  {
+    "hrsh7th/vim-searchx",
+    keys = {
+      { "/", "<Cmd>call searchx#start(#{dir: 1})<CR>", mode = { "n", "x" } },
+      { "?", "<Cmd>call searchx#start(#{dir: 0})<CR>", mode = { "n", "x" } },
+      { "n", "<Cmd>call searchx#next()<CR>", mode = { "n", "x" } },
+      { "N", "<Cmd>call searchx#prev()<CR>", mode = { "n", "x" } },
+      { "/", "<Cmd>call searchx#start(#{dir: 1})<CR>", mode = { "n", "x" } },
+    },
+    init = function()
+      vim.g.searchx = {
+        auto_accept = true,
+        scrolloff = vim.opt.scrolloff:get(),
+        scrolltime = 0,
+        nohlsearch = {
+          jump = true,
+        },
+        markers = vim.split("ASDFGHJKLQWERTYUIOP", ""),
+      }
+    end,
+  },
 }
 
 return plugins
