@@ -31,3 +31,9 @@ lspconfig.tsserver.setup({
   filetypes = {"typescript"},
   root_dir = util.root_pattern("package.json"),
 })
+
+lspconfig.pyright.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"python"},
+})
